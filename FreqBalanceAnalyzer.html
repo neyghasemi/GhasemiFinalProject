@@ -4,21 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frequency Balance Analzer</title>
-    <script type="module" src="FreqBalanceAnalyzer.js"></script>
   </head>
   <body>
     <h1>Frequency Balance Analyzer </h1>
     <div>
       <!-- Section to Upload File -->
       <h2>Upload Your File Here!</h2>
-      <button id="Upload">Upload</button>
-    </div>
-    <div>
-        Waveform
+      <!-- Section to allow user upload their file-->
+      <input type="file" id="audioFile" accept="audio/*">
+      <button id="uploadButton">Upload Audio</button>
     </div>
     <div>
       <!-- Section to Display Results (Awaiting JS) -->
       <h2>Result</h2>
     </div>
+    <script type="module" src="analysis.js"></script>
   </body>
 </html>
