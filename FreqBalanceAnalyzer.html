@@ -1,24 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Metadata and links to CSS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frequency Balance Analzer</title>
-    <script type="module" src="FreqBalanceAnalyzer.js"></script>
+    <title>Basic HTML Tutorial</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Frequency Balance Analyzer </h1>
     <div>
       <!-- Section to Upload File -->
       <h2>Upload Your File Here!</h2>
-      <button id="Upload">Upload</button>
-    </div>
-    <div>
-        Waveform
+      <!-- Section to allow user upload their file-->
+      <input type="file" id="audioFile" accept="audio/*"> <!-- /* is all audio, audio/wave is wave-->
+      <button id="uploadButton">Upload Audio</button>
     </div>
     <div>
       <!-- Section to Display Results (Awaiting JS) -->
       <h2>Result</h2>
     </div>
+    <script type="module" src="analysis.js"></script>
   </body>
 </html>
